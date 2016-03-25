@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.didTapOutside))
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("didTapOutside"))
         view.addGestureRecognizer(tapGesture)
         

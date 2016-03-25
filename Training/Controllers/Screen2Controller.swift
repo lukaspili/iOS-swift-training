@@ -19,6 +19,8 @@ class Screen2Controller: UIViewController {
         
         assert(titleToShow.characters.count > 0)
         titleLabel.text = titleToShow
+        
+        self.title = titleToShow
     }
     
     

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20876411CA037AA00B0D960 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B20876401CA037AA00B0D960 /* README.md */; };
+		B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1A1CA45D3A006FF17D /* Element.swift */; };
+		B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1C1CA4803E006FF17D /* GalleryController.swift */; };
+		B2692F201CA484C1006FF17D /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1F1CA484C1006FF17D /* GalleryCell.swift */; };
 		B27EDE191C98A02B0012D0BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDE181C98A02B0012D0BD /* AppDelegate.swift */; };
 		B27EDE1E1C98A02B0012D0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDE1C1C98A02B0012D0BD /* Main.storyboard */; };
 		B27EDE201C98A02B0012D0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27EDE1F1C98A02B0012D0BD /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B20876401CA037AA00B0D960 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B2692F1A1CA45D3A006FF17D /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Models/Element.swift; sourceTree = "<group>"; };
+		B2692F1C1CA4803E006FF17D /* GalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryController.swift; path = Controllers/GalleryController.swift; sourceTree = "<group>"; };
+		B2692F1F1CA484C1006FF17D /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCell.swift; path = Cells/GalleryCell.swift; sourceTree = "<group>"; };
 		B27EDE151C98A02B0012D0BD /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27EDE181C98A02B0012D0BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27EDE1D1C98A02B0012D0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,9 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2692F191CA45D27006FF17D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2692F1A1CA45D3A006FF17D /* Element.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B2692F1E1CA484B1006FF17D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B2692F1F1CA484C1006FF17D /* GalleryCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		B27EDE0C1C98A02A0012D0BD = {
 			isa = PBXGroup;
 			children = (
+				B20876401CA037AA00B0D960 /* README.md */,
 				B27EDE171C98A02B0012D0BD /* Training */,
 				B27EDE161C98A02B0012D0BD /* Products */,
 			);
@@ -58,6 +83,8 @@
 		B27EDE171C98A02B0012D0BD /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				B2692F1E1CA484B1006FF17D /* Cells */,
+				B2692F191CA45D27006FF17D /* Models */,
 				B2D3FF481C9B3F8A00A092ED /* Controllers */,
 				B27EDE181C98A02B0012D0BD /* AppDelegate.swift */,
 				B27EDE1C1C98A02B0012D0BD /* Main.storyboard */,
@@ -74,6 +101,7 @@
 				B2D3FF4B1C9B416900A092ED /* ViewController.swift */,
 				B2D3FF491C9B404900A092ED /* Screen2Controller.swift */,
 				B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */,
+				B2692F1C1CA4803E006FF17D /* GalleryController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -150,7 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */,
+				B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */,
 				B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */,
+				B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */,
+				B2692F201CA484C1006FF17D /* GalleryCell.swift in Sources */,
+				B20876411CA037AA00B0D960 /* README.md in Sources */,
 				B27EDE191C98A02B0012D0BD /* AppDelegate.swift in Sources */,
 				B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */,
 			);
