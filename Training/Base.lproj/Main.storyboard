@@ -276,15 +276,28 @@
                                     <constraint firstAttribute="height" constant="37" id="YgC-sR-VHx"/>
                                 </constraints>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsY-48-XcN">
+                                <rect key="frame" x="245" y="44" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="Usz-xF-9f6"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZEV-fQ-Rgz"/>
+                                </constraints>
+                                <state key="normal" title="ADD NEW PAGE"/>
+                                <connections>
+                                    <action selector="didTouchButton:" destination="3pM-uf-8Kj" eventType="touchUpInside" id="N2b-Hg-aFX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="itM-H2-YDW" firstAttribute="top" secondItem="mJ7-di-uuJ" secondAttribute="bottom" id="AEE-ZP-yaU"/>
+                            <constraint firstItem="lsY-48-XcN" firstAttribute="centerX" secondItem="alm-3Y-uki" secondAttribute="centerX" id="C59-3y-YRj"/>
                             <constraint firstItem="KbL-b2-mnW" firstAttribute="centerX" secondItem="alm-3Y-uki" secondAttribute="centerX" id="MwE-IU-TOF"/>
                             <constraint firstItem="mJ7-di-uuJ" firstAttribute="leading" secondItem="alm-3Y-uki" secondAttribute="leading" id="P3M-CX-Wlt"/>
                             <constraint firstItem="mJ7-di-uuJ" firstAttribute="top" secondItem="alm-3Y-uki" secondAttribute="top" id="P7A-Nu-3gi"/>
                             <constraint firstItem="itM-H2-YDW" firstAttribute="top" secondItem="KbL-b2-mnW" secondAttribute="bottom" constant="60" id="YFl-xT-IED"/>
                             <constraint firstAttribute="trailing" secondItem="mJ7-di-uuJ" secondAttribute="trailing" id="eoL-jv-N3I"/>
+                            <constraint firstItem="lsY-48-XcN" firstAttribute="top" secondItem="s2d-yc-L24" secondAttribute="bottom" constant="30" id="hcv-6c-rPd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -295,10 +308,10 @@
             </objects>
             <point key="canvasLocation" x="2407" y="2071"/>
         </scene>
-        <!--View Controller-->
+        <!--Pager Element View Controller-->
         <scene sceneID="cHK-3r-cZA">
             <objects>
-                <viewController storyboardIdentifier="PageOne" id="itZ-97-1bg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageOne" id="itZ-97-1bg" customClass="PagerElementViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jhr-k3-CEI"/>
                         <viewControllerLayoutGuide type="bottom" id="O8a-LV-Gx5"/>
@@ -307,15 +320,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-dp-Div">
-                                <rect key="frame" x="279" y="274" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-dp-Div">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dqk-dp-Div" secondAttribute="trailing" id="30F-oA-diY"/>
+                            <constraint firstItem="O8a-LV-Gx5" firstAttribute="top" secondItem="Dqk-dp-Div" secondAttribute="bottom" id="ITc-5a-uf5"/>
+                            <constraint firstItem="Dqk-dp-Div" firstAttribute="leading" secondItem="eYX-Yl-feg" secondAttribute="leading" id="QWT-Uk-FZa"/>
+                            <constraint firstItem="Dqk-dp-Div" firstAttribute="top" secondItem="Jhr-k3-CEI" secondAttribute="bottom" id="wNz-iO-mok"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Dqk-dp-Div" id="AlZ-yV-j9X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohz-RP-Yr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

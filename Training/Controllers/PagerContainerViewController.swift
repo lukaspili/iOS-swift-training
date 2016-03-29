@@ -9,6 +9,8 @@
 import UIKit
 
 class PagerContainerViewController: UIViewController, UIPageViewControllerDelegate {
+    
+    private(set) var pages = [UIViewController]()
 
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -16,13 +18,30 @@ class PagerContainerViewController: UIViewController, UIPageViewControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        pagerViewController = childViewControllers.first as! PagerViewController
 
         pagerViewController.delegate = self
-        pageControl.numberOfPages = pagerViewController.pages.count
         pageControl.currentPage = 0
+        
+        addPage()
     }
+    
+    private func reload() {
+        pageControl.numberOfPages = pages.count
+        pagerViewController.reload(pages)
+    }
+    
+    private func addPage() {
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("PageOne") as! PagerElementViewController
+        controller.name = "Page \(pages.count + 1)"
+        pages.append(controller)
+        
+        reload()
+    }
+    
+    @IBAction func didTouchButton(sender: AnyObject) {
+        addPage()
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "pager" {

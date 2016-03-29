@@ -10,30 +10,40 @@ import UIKit
 
 class PagerViewController: UIPageViewController, UIPageViewControllerDataSource {
     
-    private(set) var pages = [UIViewController]()
+    var pages: [UIViewController]!
     private(set) var currentPage = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pages.append(storyboard!.instantiateViewControllerWithIdentifier("PageOne"))
-        pages.append(storyboard!.instantiateViewControllerWithIdentifier("PageTwo"))
-        
-        setViewControllers([pages.first!], direction: .Forward, animated: false, completion: nil)
-        
         dataSource = self
+    }
+    
+    func reload(pages: [UIViewController]) {
+        print("reload \(currentPage)")
+        self.pages = pages
+        setViewControllers([pages[currentPage]], direction: .Forward, animated: false, completion: nil)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        currentPage = pages.indexOf(viewController)!
-        return pages[currentPage == 0 ? 1 : 0]
+        let index = pages.indexOf(viewController)!
+        if(index == pages.count - 1) {
+            return nil
+        }
+        
+        currentPage = index
+        return pages[index + 1]
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
-        currentPage = pages.indexOf(viewController)!
-        return pages[currentPage == 0 ? 1 : 0]
+        let index = pages.indexOf(viewController)!
+        if(index == 0) {
+            return nil
+        }
+        
+        currentPage = index
+        return pages[index - 1]
     }
-
 }
