@@ -18,6 +18,8 @@
 		B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF491C9B404900A092ED /* Screen2Controller.swift */; };
 		B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF4B1C9B416900A092ED /* ViewController.swift */; };
 		B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */; };
+		B2EA81581CAAEFFA00514655 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA81571CAAEFFA00514655 /* PagerViewController.swift */; };
+		B2EA815A1CAAF7FA00514655 /* PagerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B2D3FF491C9B404900A092ED /* Screen2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen2Controller.swift; path = Controllers/Screen2Controller.swift; sourceTree = "<group>"; };
 		B2D3FF4B1C9B416900A092ED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElementsController.swift; path = Controllers/ElementsController.swift; sourceTree = "<group>"; };
+		B2EA81571CAAEFFA00514655 /* PagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagerViewController.swift; path = Controllers/PagerViewController.swift; sourceTree = "<group>"; };
+		B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagerContainerViewController.swift; path = Controllers/PagerContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				B2D3FF491C9B404900A092ED /* Screen2Controller.swift */,
 				B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */,
 				B2692F1C1CA4803E006FF17D /* GalleryController.swift */,
+				B2EA81571CAAEFFA00514655 /* PagerViewController.swift */,
+				B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +186,8 @@
 				B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */,
 				B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */,
 				B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */,
+				B2EA81581CAAEFFA00514655 /* PagerViewController.swift in Sources */,
+				B2EA815A1CAAF7FA00514655 /* PagerContainerViewController.swift in Sources */,
 				B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */,
 				B2692F201CA484C1006FF17D /* GalleryCell.swift in Sources */,
 				B20876411CA037AA00B0D960 /* README.md in Sources */,
