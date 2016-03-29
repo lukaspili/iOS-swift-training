@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3pM-uf-8Kj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eg8-Xf-GPT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -409,6 +409,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXi-TA-vbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="375"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="O2d-3S-ttT">
+            <objects>
+                <viewController id="Eg8-Xf-GPT" customClass="DemoViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jrv-e5-moH"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfG-5I-ZPd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HgU-6f-EpX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFl-Xv-4MU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZ6-6P-SC7" userLabel="Content View">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.95053145660000005" blue="0.1874161349" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HZ6-6P-SC7" secondAttribute="trailing" id="43C-Vl-DbK"/>
+                                    <constraint firstItem="HZ6-6P-SC7" firstAttribute="leading" secondItem="jFl-Xv-4MU" secondAttribute="leading" id="ddk-dm-0Qp"/>
+                                    <constraint firstAttribute="bottom" secondItem="HZ6-6P-SC7" secondAttribute="bottom" id="m0w-KD-JM0"/>
+                                    <constraint firstItem="HZ6-6P-SC7" firstAttribute="top" secondItem="jFl-Xv-4MU" secondAttribute="top" id="zWC-Hy-HK0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jFl-Xv-4MU" firstAttribute="leading" secondItem="HgU-6f-EpX" secondAttribute="leading" id="ASi-f2-N6a"/>
+                            <constraint firstItem="jFl-Xv-4MU" firstAttribute="top" secondItem="HgU-6f-EpX" secondAttribute="top" id="Abi-8b-Hjd"/>
+                            <constraint firstAttribute="trailing" secondItem="jFl-Xv-4MU" secondAttribute="trailing" id="WS5-D8-soF"/>
+                            <constraint firstItem="JfG-5I-ZPd" firstAttribute="top" secondItem="jFl-Xv-4MU" secondAttribute="bottom" id="jwR-kv-KNE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="HZ6-6P-SC7" id="xJf-YN-uxz"/>
+                        <outlet property="scrollView" destination="jFl-Xv-4MU" id="hN6-Kq-QVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXA-tv-XXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="-89"/>
+        </scene>
+        <!--Demo Page View Controller-->
+        <scene sceneID="4v5-Ax-NlW">
+            <objects>
+                <viewController storyboardIdentifier="DemoPageViewController" id="V9Q-gZ-tbp" customClass="DemoPageViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0y-Cp-gNZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xud-Fn-OWu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TMP-Ni-Cam">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JW-1G-Okg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="-82"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

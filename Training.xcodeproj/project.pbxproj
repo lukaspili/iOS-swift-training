@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8562055A5BB0E8FAFD456B /* Pods_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9307366B99CDA81F7706328 /* Pods_Training.framework */; };
 		B20876411CA037AA00B0D960 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B20876401CA037AA00B0D960 /* README.md */; };
 		B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1A1CA45D3A006FF17D /* Element.swift */; };
 		B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1C1CA4803E006FF17D /* GalleryController.swift */; };
@@ -21,9 +22,16 @@
 		B2EA81581CAAEFFA00514655 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA81571CAAEFFA00514655 /* PagerViewController.swift */; };
 		B2EA815A1CAAF7FA00514655 /* PagerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */; };
 		B2EA815C1CAB03D800514655 /* PagerElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA815B1CAB03D800514655 /* PagerElementViewController.swift */; };
+		B2EA815E1CAB155100514655 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA815D1CAB155100514655 /* DemoViewController.swift */; };
+		B2EA81601CAB170900514655 /* DemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA815F1CAB170900514655 /* DemoPageViewController.swift */; };
+		B2EA81621CAB1A7B00514655 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B2EA81611CAB1A7B00514655 /* Podfile */; };
+		B2EA81651CAB232B00514655 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA81641CAB232B00514655 /* DemoView.swift */; };
+		B2EA81671CAB2AB000514655 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B2EA81661CAB2AB000514655 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69E4F12245DCE626B55A9693 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
+		A38FDE70F98D6F3FEBDCAC7E /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		B20876401CA037AA00B0D960 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B2692F1A1CA45D3A006FF17D /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Models/Element.swift; sourceTree = "<group>"; };
 		B2692F1C1CA4803E006FF17D /* GalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryController.swift; path = Controllers/GalleryController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,12 @@
 		B2EA81571CAAEFFA00514655 /* PagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagerViewController.swift; path = Controllers/PagerViewController.swift; sourceTree = "<group>"; };
 		B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagerContainerViewController.swift; path = Controllers/PagerContainerViewController.swift; sourceTree = "<group>"; };
 		B2EA815B1CAB03D800514655 /* PagerElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagerElementViewController.swift; path = Controllers/PagerElementViewController.swift; sourceTree = "<group>"; };
+		B2EA815D1CAB155100514655 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = Controllers/DemoViewController.swift; sourceTree = "<group>"; };
+		B2EA815F1CAB170900514655 /* DemoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoPageViewController.swift; path = Controllers/DemoPageViewController.swift; sourceTree = "<group>"; };
+		B2EA81611CAB1A7B00514655 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B2EA81641CAB232B00514655 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoView.swift; path = Views/DemoView.swift; sourceTree = "<group>"; };
+		B2EA81661CAB2AB000514655 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F9307366B99CDA81F7706328 /* Pods_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +61,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8562055A5BB0E8FAFD456B /* Pods_Training.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A95F7EA209F61FA6600F4160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9307366B99CDA81F7706328 /* Pods_Training.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2692F191CA45D27006FF17D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +95,13 @@
 		B27EDE0C1C98A02A0012D0BD = {
 			isa = PBXGroup;
 			children = (
+				B2EA81661CAB2AB000514655 /* .gitignore */,
+				B2EA81611CAB1A7B00514655 /* Podfile */,
 				B20876401CA037AA00B0D960 /* README.md */,
 				B27EDE171C98A02B0012D0BD /* Training */,
 				B27EDE161C98A02B0012D0BD /* Products */,
+				F41001272253812A05FF2B74 /* Pods */,
+				A95F7EA209F61FA6600F4160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +116,7 @@
 		B27EDE171C98A02B0012D0BD /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				B2EA81631CAB231600514655 /* Views */,
 				B2692F1E1CA484B1006FF17D /* Cells */,
 				B2692F191CA45D27006FF17D /* Models */,
 				B2D3FF481C9B3F8A00A092ED /* Controllers */,
@@ -111,8 +139,27 @@
 				B2EA81571CAAEFFA00514655 /* PagerViewController.swift */,
 				B2EA81591CAAF7FA00514655 /* PagerContainerViewController.swift */,
 				B2EA815B1CAB03D800514655 /* PagerElementViewController.swift */,
+				B2EA815D1CAB155100514655 /* DemoViewController.swift */,
+				B2EA815F1CAB170900514655 /* DemoPageViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B2EA81631CAB231600514655 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2EA81641CAB232B00514655 /* DemoView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F41001272253812A05FF2B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A38FDE70F98D6F3FEBDCAC7E /* Pods-Training.debug.xcconfig */,
+				69E4F12245DCE626B55A9693 /* Pods-Training.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B27EDE271C98A02B0012D0BD /* Build configuration list for PBXNativeTarget "Training" */;
 			buildPhases = (
+				553645A5D2F95816D1EAEB3C /* Check Pods Manifest.lock */,
 				B27EDE111C98A02A0012D0BD /* Sources */,
 				B27EDE121C98A02A0012D0BD /* Frameworks */,
 				B27EDE131C98A02A0012D0BD /* Resources */,
+				37FB6F7331E020F3ED6E2A91 /* Embed Pods Frameworks */,
+				604B023C7628ACF3E6BF2090 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,13 +223,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EA81671CAB2AB000514655 /* .gitignore in Resources */,
 				B27EDE231C98A02B0012D0BD /* LaunchScreen.storyboard in Resources */,
 				B27EDE201C98A02B0012D0BD /* Assets.xcassets in Resources */,
+				B2EA81621CAB1A7B00514655 /* Podfile in Resources */,
 				B27EDE1E1C98A02B0012D0BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37FB6F7331E020F3ED6E2A91 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Training/Pods-Training-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		553645A5D2F95816D1EAEB3C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		604B023C7628ACF3E6BF2090 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Training/Pods-Training-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B27EDE111C98A02A0012D0BD /* Sources */ = {
@@ -188,7 +288,9 @@
 			files = (
 				B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */,
 				B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */,
+				B2EA81601CAB170900514655 /* DemoPageViewController.swift in Sources */,
 				B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */,
+				B2EA815E1CAB155100514655 /* DemoViewController.swift in Sources */,
 				B2EA81581CAAEFFA00514655 /* PagerViewController.swift in Sources */,
 				B2EA815A1CAAF7FA00514655 /* PagerContainerViewController.swift in Sources */,
 				B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */,
@@ -197,6 +299,7 @@
 				B27EDE191C98A02B0012D0BD /* AppDelegate.swift in Sources */,
 				B2EA815C1CAB03D800514655 /* PagerElementViewController.swift in Sources */,
 				B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */,
+				B2EA81651CAB232B00514655 /* DemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +408,7 @@
 		};
 		B27EDE281C98A02B0012D0BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38FDE70F98D6F3FEBDCAC7E /* Pods-Training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Training/Info.plist;
@@ -316,6 +420,7 @@
 		};
 		B27EDE291C98A02B0012D0BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E4F12245DCE626B55A9693 /* Pods-Training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Training/Info.plist;
