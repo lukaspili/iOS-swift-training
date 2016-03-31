@@ -16,6 +16,48 @@ class DemoViewController: UIViewController, UIScrollViewDelegate {
     
     private var pages = [DemoPageViewController]()
     
+    
+    
+    
+    
+    func computeLongOperation(completion: (Int) -> (String)) {
+        
+        print("COMPUTE START")
+        
+        // LONG COMPUTATION IN ASYNC
+        let result = 100
+        
+        let message = completion(result)
+        print(message)
+        
+        print("COMPUTE END")
+    }
+    
+    func toto() {
+        
+        print("START")
+        
+        computeLongOperation { (result) -> (String) in
+            return "The result is: \(result)"
+        }
+        
+        print("END")
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,12 +68,47 @@ class DemoViewController: UIViewController, UIScrollViewDelegate {
         addPage(color: UIColor.blueColor())
         
         
+        // view
+        // -- scrollview
+        // ----- content view
+        // ------- pageview 1
+        // ------- pageview 2
+        // ------- pageview 3
+        
+        
+        // asd
+        // REQUEST -> ALAMOFIRE -> CLOSURE
+        // dsf
+        // sdfs
+        // sdf
+        // CLOSURE
+        
+        
         for (index, controller) in pages.enumerate() {
             // step1: add child controller
             addChildViewController(controller)
             
             // step2: add child view to parent view
             contentView.addSubview(controller.view)
+            
+            
+            var array = [2, 4, 10, 20]
+            var array2 = [Int]()
+            for item in array {
+                array2.append(item * item)
+            }
+            
+            let array3 = array.map({ $0 * $0 })
+            
+            
+            let toto = array.map { "hello = \($0)" }
+            
+            let names = ["John", "Theo", "Thomas"]
+            print("Bonjour ")
+            
+            // => array2 = [4, 16, 100, 400]
+            
+            
             
             // step3: constraints
             controller.view.snp_makeConstraints { (make) in

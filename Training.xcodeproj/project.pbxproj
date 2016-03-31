@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F8562055A5BB0E8FAFD456B /* Pods_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9307366B99CDA81F7706328 /* Pods_Training.framework */; };
 		B20876411CA037AA00B0D960 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B20876401CA037AA00B0D960 /* README.md */; };
+		B253A1361CADA5D700137BDE /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253A1351CADA5D700137BDE /* PostsViewController.swift */; };
+		B253A1381CADBAB700137BDE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253A1371CADBAB700137BDE /* Post.swift */; };
 		B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1A1CA45D3A006FF17D /* Element.swift */; };
 		B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1C1CA4803E006FF17D /* GalleryController.swift */; };
 		B2692F201CA484C1006FF17D /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2692F1F1CA484C1006FF17D /* GalleryCell.swift */; };
@@ -33,6 +35,8 @@
 		69E4F12245DCE626B55A9693 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
 		A38FDE70F98D6F3FEBDCAC7E /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		B20876401CA037AA00B0D960 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B253A1351CADA5D700137BDE /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsViewController.swift; path = Controllers/PostsViewController.swift; sourceTree = "<group>"; };
+		B253A1371CADBAB700137BDE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
 		B2692F1A1CA45D3A006FF17D /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Models/Element.swift; sourceTree = "<group>"; };
 		B2692F1C1CA4803E006FF17D /* GalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryController.swift; path = Controllers/GalleryController.swift; sourceTree = "<group>"; };
 		B2692F1F1CA484C1006FF17D /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCell.swift; path = Cells/GalleryCell.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B2692F1A1CA45D3A006FF17D /* Element.swift */,
+				B253A1371CADBAB700137BDE /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				B2EA815B1CAB03D800514655 /* PagerElementViewController.swift */,
 				B2EA815D1CAB155100514655 /* DemoViewController.swift */,
 				B2EA815F1CAB170900514655 /* DemoPageViewController.swift */,
+				B253A1351CADA5D700137BDE /* PostsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,7 +301,9 @@
 				B2EA815A1CAAF7FA00514655 /* PagerContainerViewController.swift in Sources */,
 				B2692F1B1CA45D3A006FF17D /* Element.swift in Sources */,
 				B2692F201CA484C1006FF17D /* GalleryCell.swift in Sources */,
+				B253A1361CADA5D700137BDE /* PostsViewController.swift in Sources */,
 				B20876411CA037AA00B0D960 /* README.md in Sources */,
+				B253A1381CADBAB700137BDE /* Post.swift in Sources */,
 				B27EDE191C98A02B0012D0BD /* AppDelegate.swift in Sources */,
 				B2EA815C1CAB03D800514655 /* PagerElementViewController.swift in Sources */,
 				B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */,
