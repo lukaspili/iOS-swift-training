@@ -18,6 +18,9 @@
 		B27EDE1E1C98A02B0012D0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDE1C1C98A02B0012D0BD /* Main.storyboard */; };
 		B27EDE201C98A02B0012D0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27EDE1F1C98A02B0012D0BD /* Assets.xcassets */; };
 		B27EDE231C98A02B0012D0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDE211C98A02B0012D0BD /* LaunchScreen.storyboard */; };
+		B2D2E2881CB44D6F00BEC273 /* PostDetail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2E2871CB44D6F00BEC273 /* PostDetail2ViewController.swift */; };
+		B2D2E28A1CB4546900BEC273 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2E2891CB4546900BEC273 /* User.swift */; };
+		B2D2E28C1CB456BB00BEC273 /* PostDetail2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2E28B1CB456BB00BEC273 /* PostDetail2View.swift */; };
 		B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF491C9B404900A092ED /* Screen2Controller.swift */; };
 		B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF4B1C9B416900A092ED /* ViewController.swift */; };
 		B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */; };
@@ -46,6 +49,9 @@
 		B27EDE1F1C98A02B0012D0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27EDE221C98A02B0012D0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B27EDE241C98A02B0012D0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D2E2871CB44D6F00BEC273 /* PostDetail2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostDetail2ViewController.swift; path = Controllers/PostDetail2ViewController.swift; sourceTree = "<group>"; };
+		B2D2E2891CB4546900BEC273 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		B2D2E28B1CB456BB00BEC273 /* PostDetail2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostDetail2View.swift; path = Views/PostDetail2View.swift; sourceTree = "<group>"; };
 		B2D3FF491C9B404900A092ED /* Screen2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen2Controller.swift; path = Controllers/Screen2Controller.swift; sourceTree = "<group>"; };
 		B2D3FF4B1C9B416900A092ED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		B2D3FF4D1C9B4F8800A092ED /* ElementsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElementsController.swift; path = Controllers/ElementsController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			children = (
 				B2692F1A1CA45D3A006FF17D /* Element.swift */,
 				B253A1371CADBAB700137BDE /* Post.swift */,
+				B2D2E2891CB4546900BEC273 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				B2EA815D1CAB155100514655 /* DemoViewController.swift */,
 				B2EA815F1CAB170900514655 /* DemoPageViewController.swift */,
 				B253A1351CADA5D700137BDE /* PostsViewController.swift */,
+				B2D2E2871CB44D6F00BEC273 /* PostDetail2ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B2EA81641CAB232B00514655 /* DemoView.swift */,
+				B2D2E28B1CB456BB00BEC273 /* PostDetail2View.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 				B2D3FF4E1C9B4F8800A092ED /* ElementsController.swift in Sources */,
 				B2692F1D1CA4803E006FF17D /* GalleryController.swift in Sources */,
 				B2EA81601CAB170900514655 /* DemoPageViewController.swift in Sources */,
+				B2D2E2881CB44D6F00BEC273 /* PostDetail2ViewController.swift in Sources */,
 				B2D3FF4C1C9B416900A092ED /* ViewController.swift in Sources */,
 				B2EA815E1CAB155100514655 /* DemoViewController.swift in Sources */,
 				B2EA81581CAAEFFA00514655 /* PagerViewController.swift in Sources */,
@@ -304,10 +314,12 @@
 				B253A1361CADA5D700137BDE /* PostsViewController.swift in Sources */,
 				B20876411CA037AA00B0D960 /* README.md in Sources */,
 				B253A1381CADBAB700137BDE /* Post.swift in Sources */,
+				B2D2E28C1CB456BB00BEC273 /* PostDetail2View.swift in Sources */,
 				B27EDE191C98A02B0012D0BD /* AppDelegate.swift in Sources */,
 				B2EA815C1CAB03D800514655 /* PagerElementViewController.swift in Sources */,
 				B2D3FF4A1C9B404900A092ED /* Screen2Controller.swift in Sources */,
 				B2EA81651CAB232B00514655 /* DemoView.swift in Sources */,
+				B2D2E28A1CB4546900BEC273 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
