@@ -11,4 +11,6 @@ import Foundation
 struct User {
     let name: String
     let username: String
+    let latitude: Double
+    let longitude: Double
 }
